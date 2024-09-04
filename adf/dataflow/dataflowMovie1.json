@@ -51,7 +51,9 @@
 				"     skipDuplicateMapOutputs: true) ~> select1",
 				"select1 filter(toInteger(year)>1950) ~> filter1",
 				"filter1 derive(PrimaryGenre = split(genres,\"|\")[1]) ~> derivedColumn1",
-				"derivedColumn1 window() ~> RankMoviewByRatings"
+				"derivedColumn1 window(over(PrimaryGenre,",
+				"          year),",
+				"     desc(RottenTomato, true)) ~> RankMoviewByRatings"
 			]
 		}
 	}
