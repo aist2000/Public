@@ -59,7 +59,8 @@
 				"     desc(RottenTomato, true),",
 				"     RatingsRank = rank()) ~> RankMoviewByRatings",
 				"RankMoviewByRatings aggregate(groupBy(PrimaryGenre,",
-				"          year)) ~> aggregateRatings"
+				"          year),",
+				"     AverateRating = av) ~> aggregateRatings"
 			]
 		}
 	}
