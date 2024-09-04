@@ -53,7 +53,8 @@
 				"filter1 derive(PrimaryGenre = split(genres,\"|\")[1]) ~> derivedColumn1",
 				"derivedColumn1 window(over(PrimaryGenre,",
 				"          year),",
-				"     desc(RottenTomato, true)) ~> RankMoviewByRatings"
+				"     desc(RottenTomato, true),",
+				"     RatingsRank = rank()) ~> RankMoviewByRatings"
 			]
 		}
 	}
