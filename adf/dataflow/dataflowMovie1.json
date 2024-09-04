@@ -25,6 +25,9 @@
 				},
 				{
 					"name": "RankMoviewByRatings"
+				},
+				{
+					"name": "aggregate1"
 				}
 			],
 			"scriptLines": [
@@ -54,7 +57,8 @@
 				"derivedColumn1 window(over(PrimaryGenre,",
 				"          year),",
 				"     desc(RottenTomato, true),",
-				"     RatingsRank = rank()) ~> RankMoviewByRatings"
+				"     RatingsRank = rank()) ~> RankMoviewByRatings",
+				"RankMoviewByRatings aggregate() ~> aggregate1"
 			]
 		}
 	}
