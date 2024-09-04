@@ -12,7 +12,15 @@
 					"name": "MovieADLS"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
 			"transformations": [
 				{
 					"name": "select1"
@@ -63,7 +71,19 @@
 				"     AverateRating = avg(toInteger(RottenTomato)),",
 				"          HighestRated = first(title),",
 				"          LowestRated = last(title),",
-				"          NumberOfMovies = count()) ~> aggregateRatings"
+				"          NumberOfMovies = count()) ~> aggregateRatings",
+				"aggregateRatings sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     input(",
+				"          movie as string,",
+				"          title as string,",
+				"          genres as string,",
+				"          year as string,",
+				"          Rating as string,",
+				"          RottenTomato as string",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
 		}
 	}
