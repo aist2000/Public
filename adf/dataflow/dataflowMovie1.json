@@ -1,0 +1,19 @@
+{
+	"name": "dataflowMovie1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "MovieADLS"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> MovieADLS"
+			]
+		}
+	}
+}
