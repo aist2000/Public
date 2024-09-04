@@ -60,7 +60,8 @@
 				"     RatingsRank = rank()) ~> RankMoviewByRatings",
 				"RankMoviewByRatings aggregate(groupBy(PrimaryGenre,",
 				"          year),",
-				"     AverateRating = av) ~> aggregateRatings"
+				"     AverateRating = avg(toInteger(RottenTomato)),",
+				"          HighestRated = first(title)) ~> aggregateRatings"
 			]
 		}
 	}
