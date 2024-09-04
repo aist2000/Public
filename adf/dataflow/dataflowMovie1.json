@@ -5,6 +5,10 @@
 		"typeProperties": {
 			"sources": [
 				{
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					},
 					"name": "MovieADLS"
 				}
 			],
@@ -12,7 +16,8 @@
 			"transformations": [],
 			"scriptLines": [
 				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> MovieADLS"
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> MovieADLS"
 			]
 		}
 	}
