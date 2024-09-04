@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "moviesDBratings.csv",
+				"fileName": "moviesDB.csv",
 				"folderPath": "src",
 				"container": "adf"
 			},
