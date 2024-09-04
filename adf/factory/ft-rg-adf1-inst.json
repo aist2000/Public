@@ -1,0 +1,9 @@
+{
+	"name": "ft-rg-adf1-inst",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "683043dc-1ade-4786-9be1-85b7ea7e8acc",
+		"tenantId": "69fd2a80-04e8-4fa2-a116-8c33f8178619"
+	}
+}
