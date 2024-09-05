@@ -1,0 +1,17 @@
+{
+	"name": "AzureDatabricks1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-2270786754464308.8.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/052aae49-ac5d-4e93-b3ba-d2b4cb06df05/resourceGroups/ft-rg-adf1/providers/Microsoft.Databricks/workspaces/fr-ws-databricks1",
+			"existingClusterId": "683043dc-1ade-4786-9be1-85b7ea7e8acc"
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
