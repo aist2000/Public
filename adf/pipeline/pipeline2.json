@@ -33,7 +33,6 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
 				"linkedServiceName": {
 					"referenceName": "AzureSynapseArtifacts1",
 					"type": "LinkedServiceReference"
