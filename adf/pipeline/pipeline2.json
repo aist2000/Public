@@ -23,8 +23,8 @@
 				}
 			},
 			{
-				"name": "Notebook2",
-				"type": "SynapseNotebook",
+				"name": "Spark job definition1",
+				"type": "SparkJob",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -34,9 +34,6 @@
 					"secureInput": false
 				},
 				"userProperties": [],
-				"typeProperties": {
-					"snapshot": true
-				},
 				"linkedServiceName": {
 					"referenceName": "AzureSynapseArtifacts1",
 					"type": "LinkedServiceReference"
