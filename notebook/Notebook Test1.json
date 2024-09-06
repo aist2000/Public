@@ -1,0 +1,671 @@
+{
+	"name": "Notebook Test1",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "fsparkpool",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "dbc80dce-f75d-4216-b36e-b8c52a2cdb09"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"605f862b-a95e-4b59-a15e-f5d8f70361c4": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "108583",
+										"1": "Fawlty Towers (1975",
+										"2": "Comedy",
+										"3": "-1980",
+										"4": "1",
+										"5": "54"
+									},
+									{
+										"0": "32898",
+										"1": "Trip to the Moon, A (Voyage dans la lune, Le)",
+										"2": "Action|Adventure|Fantasy|Sci-Fi",
+										"3": "1902",
+										"4": "7",
+										"5": "80"
+									},
+									{
+										"0": "7065",
+										"1": "Birth of a Nation, The",
+										"2": "Drama|War",
+										"3": "1915",
+										"4": "6",
+										"5": "92"
+									},
+									{
+										"0": "7243",
+										"1": "Intolerance: Love's Struggle Throughout the Ages",
+										"2": "Drama",
+										"3": "1915",
+										"4": "4",
+										"5": "82"
+									},
+									{
+										"0": "62383",
+										"1": "20,000 Leagues Under the Sea",
+										"2": "Action|Adventure|Sci-Fi",
+										"3": "1915",
+										"4": "9",
+										"5": "92"
+									},
+									{
+										"0": "8511",
+										"1": "Immigrant, The",
+										"2": "Comedy",
+										"3": "1917",
+										"4": "4",
+										"5": "59"
+									},
+									{
+										"0": "3309",
+										"1": "Dog's Life, A",
+										"2": "Comedy",
+										"3": "1917",
+										"4": "3",
+										"5": "83"
+									},
+									{
+										"0": "72626",
+										"1": "Billy Blazes, Esq.",
+										"2": "Comedy|Western",
+										"3": "1918",
+										"4": "2",
+										"5": "63"
+									},
+									{
+										"0": "6987",
+										"1": "Cabinet of Dr. Caligari, The (Cabinet des Dr. Caligari., Das)",
+										"2": "Crime|Fantasy|Horror",
+										"3": "1919",
+										"4": "4",
+										"5": "63"
+									},
+									{
+										"0": "25737",
+										"1": "Golem, The (Golem, wie er in die Welt kam, Der)",
+										"2": "Fantasy|Horror",
+										"3": "1919",
+										"4": "8",
+										"5": "50"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "movie",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "title",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "genres",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "year",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "Rating",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "RottenTomato",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"ff1bc14d-fe23-48cf-971b-eee472c1a319": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "108583",
+										"1": "Fawlty Towers (1975",
+										"2": "Comedy",
+										"3": "-1980",
+										"4": "1",
+										"5": "54"
+									},
+									{
+										"0": "32898",
+										"1": "Trip to the Moon, A (Voyage dans la lune, Le)",
+										"2": "Action|Adventure|Fantasy|Sci-Fi",
+										"3": "1902",
+										"4": "7",
+										"5": "80"
+									},
+									{
+										"0": "7065",
+										"1": "Birth of a Nation, The",
+										"2": "Drama|War",
+										"3": "1915",
+										"4": "6",
+										"5": "92"
+									},
+									{
+										"0": "7243",
+										"1": "Intolerance: Love's Struggle Throughout the Ages",
+										"2": "Drama",
+										"3": "1915",
+										"4": "4",
+										"5": "82"
+									},
+									{
+										"0": "62383",
+										"1": "20,000 Leagues Under the Sea",
+										"2": "Action|Adventure|Sci-Fi",
+										"3": "1915",
+										"4": "9",
+										"5": "92"
+									},
+									{
+										"0": "8511",
+										"1": "Immigrant, The",
+										"2": "Comedy",
+										"3": "1917",
+										"4": "4",
+										"5": "59"
+									},
+									{
+										"0": "3309",
+										"1": "Dog's Life, A",
+										"2": "Comedy",
+										"3": "1917",
+										"4": "3",
+										"5": "83"
+									},
+									{
+										"0": "72626",
+										"1": "Billy Blazes, Esq.",
+										"2": "Comedy|Western",
+										"3": "1918",
+										"4": "2",
+										"5": "63"
+									},
+									{
+										"0": "6987",
+										"1": "Cabinet of Dr. Caligari, The (Cabinet des Dr. Caligari., Das)",
+										"2": "Crime|Fantasy|Horror",
+										"3": "1919",
+										"4": "4",
+										"5": "63"
+									},
+									{
+										"0": "25737",
+										"1": "Golem, The (Golem, wie er in die Welt kam, Der)",
+										"2": "Fantasy|Horror",
+										"3": "1919",
+										"4": "8",
+										"5": "50"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "movie",
+										"type": "int"
+									},
+									{
+										"key": "1",
+										"name": "title",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "genres",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "year",
+										"type": "int"
+									},
+									{
+										"key": "4",
+										"name": "rating",
+										"type": "int"
+									},
+									{
+										"key": "5",
+										"name": "rottentomato",
+										"type": "int"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"ef7c930a-fe75-4ddf-afd2-9c3c139fed6c": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": [
+											"Comedy"
+										]
+									},
+									{
+										"0": [
+											"Action",
+											"Adventure",
+											"Fantasy",
+											"Sci-Fi"
+										]
+									},
+									{
+										"0": [
+											"Drama",
+											"War"
+										]
+									},
+									{
+										"0": [
+											"Drama"
+										]
+									},
+									{
+										"0": [
+											"Action",
+											"Adventure",
+											"Sci-Fi"
+										]
+									},
+									{
+										"0": [
+											"Comedy"
+										]
+									},
+									{
+										"0": [
+											"Comedy"
+										]
+									},
+									{
+										"0": [
+											"Comedy",
+											"Western"
+										]
+									},
+									{
+										"0": [
+											"Crime",
+											"Fantasy",
+											"Horror"
+										]
+									},
+									{
+										"0": [
+											"Fantasy",
+											"Horror"
+										]
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "genres",
+										"type": "ArrayType(StringType,false)"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/052aae49-ac5d-4e93-b3ba-d2b4cb06df05/resourceGroups/ft-rg-synapse/providers/Microsoft.Synapse/workspaces/ws-syn-test1/bigDataPools/fsparkpool",
+				"name": "fsparkpool",
+				"type": "Spark",
+				"endpoint": "https://ws-syn-test1.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/fsparkpool",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.4",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"**Test SPARK**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://adf@ftstacc1.dfs.core.windows.net/src/moviesDB.csv', format='csv'\r\n",
+					"## If header exists uncomment line below\r\n",
+					", header=True\r\n",
+					")\r\n",
+					"display(df.limit(10))"
+				],
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"\r\n",
+					" from pyspark.sql.types import *\r\n",
+					" from pyspark.sql.functions import *\r\n",
+					"\r\n",
+					" schemaT = StructType([\r\n",
+					"     StructField(\"movie\", IntegerType()),\r\n",
+					"     StructField(\"title\", StringType()),\r\n",
+					"     StructField(\"genres\", StringType()),\r\n",
+					"     StructField(\"year\", IntegerType()),\r\n",
+					"     StructField(\"rating\", IntegerType()),\r\n",
+					"     StructField(\"rottentomato\", IntegerType())\r\n",
+					"      ])\r\n",
+					"\r\n",
+					"df = spark.read.load('abfss://adf@ftstacc1.dfs.core.windows.net/src/moviesDB.csv', format='csv', schema=schemaT\r\n",
+					"## If header exists uncomment line below\r\n",
+					", header=True\r\n",
+					")\r\n",
+					"display(df.limit(10))"
+				],
+				"execution_count": 69
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					" df.printSchema()"
+				],
+				"execution_count": 70
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"df_genres = df.select('genres')\r\n",
+					"# display(df_genres.limit(10))\r\n",
+					"print(df_genres.count())\r\n",
+					"print(df_genres.distinct().count())"
+				],
+				"execution_count": 21
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df1 = spark.createDataFrame([(\"AA|A\",), (\"B||B\",), (\"|C#|C#C#\",), (None,)], [\"clm\",])\r\n",
+					"df1.show()"
+				],
+				"execution_count": 64
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df2=df1.select(split(\"clm\", \"\\|\").alias('clm'))\r\n",
+					"df2.show()"
+				],
+				"execution_count": 65
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					" #Explode the array and select unique values\r\n",
+					"unique_values = df2.select(explode('clm').alias('unique_values')).distinct()\r\n",
+					"\r\n",
+					"# Show the unique values\r\n",
+					"unique_values.show()"
+				],
+				"execution_count": 66
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df['genres'][0]"
+				],
+				"execution_count": 72
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"\r\n",
+					"from pyspark.sql.functions import *\r\n",
+					"\r\n",
+					"# Split the column into an array using the `split` function\r\n",
+					"#df_g = df.withColumn('genres', split(df.genres, '|'))\r\n",
+					"df_g = df.select( split('genres', \"\\|\").alias('genres') )\r\n",
+					"display(df_g.limit(10))\r\n",
+					""
+				],
+				"execution_count": 78
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Explode the array and select unique values\r\n",
+					"\r\n",
+					"unique_genres = df_g.select(explode('genres').alias('unique_genres')).distinct()\r\n",
+					"\r\n",
+					"# Show the unique values\r\n",
+					"unique_genres.show()"
+				],
+				"execution_count": 80
+			}
+		]
+	}
+}
