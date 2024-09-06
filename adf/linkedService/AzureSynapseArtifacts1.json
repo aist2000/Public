@@ -1,0 +1,16 @@
+{
+	"name": "AzureSynapseArtifacts1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSynapseArtifacts",
+		"typeProperties": {
+			"endpoint": "https://ws-syn-test1.dev.azuresynapse.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/052aae49-ac5d-4e93-b3ba-d2b4cb06df05/resourceGroups/ft-rg-synapse/providers/Microsoft.Synapse/workspaces/ws-syn-test1"
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
